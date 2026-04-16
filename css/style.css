@@ -1,0 +1,203 @@
+/* Q1 */
+.box {
+  width: 400px;
+  height: 400px;
+  background-color: #ff0000;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 959px) {
+  .box {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Q2 */
+.box2 {
+  width: 300px;
+  height: 300px;
+  background-color: #ff0000;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 959px) {
+  .box2 {
+    background-color: #007bff;
+  }
+}
+
+/* Q3 */
+.box-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.box3 {
+  width: 300px;
+  height: 300px;
+}
+
+.blue {
+  background-color: #0008ff;
+  margin-right: 150px;
+}
+
+.green {
+  background-color: #22ff00;
+}
+
+@media screen and (max-width: 959px) {
+  .blue {
+    margin-right: 50px;
+  }
+}
+
+/* Q4 */
+.float-wrap {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.float-wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.float-box {
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.blue2 {
+  background-color: #0008ff;
+}
+
+@media screen and (max-width: 959px) {
+  .float-wrap {
+    width: 300px;
+    margin: 0;
+  }
+
+  .float-box {
+    float: none;
+  }
+}
+
+/* Q5 */
+.flex-reverse-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-box {
+  width: 250px;
+  height: 250px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+}
+
+.red3 {
+  background-color: #ff0000;
+}
+
+.blue3 {
+  background-color: #0008ff;
+}
+
+.orange3 {
+  background-color: #ff8400;
+}
+
+@media screen and (max-width: 959px) {
+  .flex-reverse-wrap {
+    flex-direction: row-reverse;
+  }
+}
+
+/* Q6 */
+.flex-order-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-order-box {
+  width: 250px;
+  height: 250px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+}
+
+.green2 {
+  background-color: #00ff51;
+}
+
+.yellow2 {
+  background-color: #d4ff00;
+}
+
+.pink2 {
+  background-color: #ff00e1;
+}
+
+@media screen and (max-width: 959px) {
+  .green2 {
+    order: 2;
+  }
+
+  .yellow2 {
+    order: 3;
+  }
+
+  .pink2 {
+    order: 1;
+  }
+}
+
+/* Q7 */
+.display-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.display-box {
+  width: 250px;
+  height: 250px;
+}
+
+.red4 {
+  background-color: #ff0000;
+}
+
+.blue4 {
+  background-color: #0008ff;
+  display: none;
+}
+
+.green4 {
+  background-color: #00ff51;
+}
+
+@media screen and (max-width: 959px) {
+  .red4 {
+    display: none;
+  }
+
+  .blue4 {
+    display: block;
+  }
+}
