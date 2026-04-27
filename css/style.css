@@ -82,7 +82,8 @@
 @media screen and (max-width: 959px) {
   .float-wrap {
     width: 300px;
-    margin: 0;
+    margin-left: 15%;
+    margin-right: 0;
   }
 
   .float-box {
