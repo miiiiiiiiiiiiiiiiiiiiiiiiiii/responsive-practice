@@ -59,7 +59,7 @@
   margin: 0 auto;
 }
 
-.float-wrap::after {
+.clearfix::after {
   content: "";
   display: block;
   clear: both;
@@ -145,14 +145,17 @@
 
 .green2 {
   background-color: #00ff51;
+  order: 1;
 }
 
 .yellow2 {
   background-color: #d4ff00;
+  order: 2;
 }
 
 .pink2 {
   background-color: #ff00e1;
+  order: 3;
 }
 
 @media screen and (max-width: 959px) {
